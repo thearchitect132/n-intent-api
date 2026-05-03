@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["nor"],
+  "additionalProperties": false,
+  "properties": {
+    "nor": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          { "$ref": "#" }
+        ]
+      }
+    }
+  }
+}
